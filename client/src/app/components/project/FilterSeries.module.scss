@@ -1,0 +1,61 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+
+        max-width: 100%;
+    }
+
+    li {
+        list-style: none;
+        padding: 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        h3 {
+            color: rgba($color: #000000, $alpha: 1.0);
+        }
+
+        @media (min-width: 28rem) {
+            max-width: 50%;
+            width: 100%;
+            transition: 0.15s ease;
+
+        }
+
+        @media (min-width: 54rem) {
+            max-width: 33%;
+            width: 100%;
+            transition: 0.15s ease;
+
+        }
+
+        @media (min-width: 75rem) {
+            max-width: 32%;
+            width: 100%;
+            transition: 0.15s ease;
+
+        }
+
+        @media (min-width: 100rem) {
+            max-width: 25%;
+            width: 100%;
+            transition: 0.15s ease;
+
+        }
+
+        @media (min-width: 118.75rem) {
+            max-width: 20%;
+            width: 100%;
+            transition: 0.15s ease;
+        }
+    }
+
+}

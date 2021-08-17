@@ -1,0 +1,14 @@
+export const LANDING = '/';
+export const HOME = '/home';
+export const MOVIES = '/movies';
+export const MOVIE_DETAILS = '/movies/:id';
+export const MOVIES_POPULAIR = '/populair';
+export const MOVIES_RATED = '/rated';
+export const MOVIES_SOON = '/soon';
+export const SHOWS = '/shows';
+export const PROJECT_DETAILS = '/projects/:id';
+export const POSTS = '/posts';
+export const POST_DETAILS = '/posts/:id';
+export const AUTH_SIGN_IN = '/auth/sigin';
+export const AUTH_SIGN_OUT = '/auth/signout';
+export const FOUROFOUR = '/404';
