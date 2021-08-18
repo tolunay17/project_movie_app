@@ -3,7 +3,7 @@ import * as Routes from '../../routes'
 import styles from './ProjectDetails.module.scss';
 
 
-const MovieListItem = ({ movie }) => {
+const HomeListItem = ({ movie }) => {
   return (
     <article className={styles.MovieListEach}>     
     <Link to={Routes.MOVIE_DETAILS.replace(':id', movie.id)}>
@@ -17,5 +17,4 @@ const MovieListItem = ({ movie }) => {
     </article>
   )
 };
-
-export default MovieListItem;
+export default HomeListItem;

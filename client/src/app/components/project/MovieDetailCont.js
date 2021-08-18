@@ -1,7 +1,6 @@
 import styles from './ProjectDetails.module.scss';
 
 const MovieDetailsCont = ({ data }) => {
-  const CREDITS = `https://api.themovieindb.org`
   return (
     <article className={styles.datalistItem}>      
 
@@ -28,7 +27,7 @@ const MovieDetailsCont = ({ data }) => {
               <li key={company.id}>
                 { company.logo_path !== null ? 
               <img alt=" company logo" className={styles.compiesLogo} src={`https://image.tmdb.org/t/p/original${company.logo_path}`}></img> :  
-              <img alt=" company logo" className={styles.compiesLogo} src={`https://haes.ca/operations/papua-new-guinea/`}></img> 
+              ""
               }
               <p>{company.name}</p>
               </li>
@@ -38,27 +37,6 @@ const MovieDetailsCont = ({ data }) => {
       </div> 
       : "" 
     }
-    {/* { creditData ? 
-    
-    <div>
-      <h3>Cast and Crews</h3>
-      <div>
-        <h3>Cast</h3>
-        <ul className={`${showAllCast ? styles.usersOpen : styles.usersClosed} ${styles.ul}`}>
-          { crediteData.cast.length !== 0 ? creditData.cast.map(member => {
-            return(
-              <li key={members.cast_id}>
-                {members.profile_path !== null ? <img alt=" " className={styles.img} src={`https.//image.tmdb.org/t/g/original${members.profile_path}`}></img> : <div className={styles.img}></div>}
-                <p>{members.name} <h4 className={styles.red}> As</h4>{member.character}</p>
-              </li>
-            )
-          }) : <p>None cast members were found</p>}
-        </ul>
-        <p onClick={togglecast} className={styles.hover}>{showAllCrew ? "hide them" : "show more of them"}</p>
-      </div>
-    </div>
-    : ""
-    } */}
     </article>
   )
 };

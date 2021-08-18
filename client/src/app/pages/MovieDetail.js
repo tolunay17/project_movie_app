@@ -3,7 +3,7 @@ import { MovieDetailsCont } from '../components/project';
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../hooks';
 
-const MoviePage = () => {
+const MovieDetail = () => {
 
   const { id } = useParams();
   const MOVIE_API = `https://api.themoviedb.org/3/movie/${id}?api_key=910c5818cdbaa5582832e8d21687df71&language=en-US&append_to_response=video`
@@ -19,4 +19,4 @@ const MoviePage = () => {
   );
 };
 
-export default MoviePage;
+export default MovieDetail;

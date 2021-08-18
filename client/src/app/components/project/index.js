@@ -1,4 +1,5 @@
 import ProjectDetails from './ProjectDetails';
+import HomeList from './HomeList'
 import ProjectList from './ProjectList';
 import ProjectReviewList from './ProjectReviewList';
 import MovieList from './MovieList';
@@ -20,4 +21,5 @@ export {
   FilterSeries,
   PopulairList,
   MovieDetailsCont,
+  HomeList,
 }
