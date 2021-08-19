@@ -27,7 +27,7 @@ const MainNavigation = () => {
           <li><Link to={Routes.MOVIES_SOON}>Soon</Link>
           </li>
         <li>
-          <Link to={Routes.SHOWS}>Shows</Link>
+          <Link to={Routes.SERIES}>Series</Link>
         </li>
         <li>
           {!!currentUser

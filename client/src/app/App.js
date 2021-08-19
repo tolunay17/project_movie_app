@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as Routes from './routes';
 
 import styles from './App.module.scss';
-import { HomePage, MoviePage, MovieDetail, SignInPage, SeriePage, PopulairPage } from './pages';
+import { HomePage, MoviePage, MovieDetail, SignInPage, SeriePage, SerieDetail, PopulairPage } from './pages';
 
 
 function App() {
@@ -20,7 +20,8 @@ function App() {
                   <Route exact path={Routes.MOVIE_DETAILS} component={ MovieDetail }/>
                   <Route exact path={Routes.MOVIES} component={ MoviePage }/>
                   <Route exact path={Routes.MOVIES_POPULAIR} component={ PopulairPage }/>
-                  <Route exact path={Routes.SHOWS} component={ SeriePage }/>
+                  <Route exact path={Routes.SERIE_DETAILS} component={ SerieDetail }/>
+                  <Route exact path={Routes.SERIES} component={ SeriePage }/>
                   <Route exact path={Routes.AUTH_SIGN_IN} component={ SignInPage }/>
               
               </Switch>

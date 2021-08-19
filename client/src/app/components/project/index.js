@@ -9,6 +9,7 @@ import MovieListItem from './MovieListItem';
 import FilterSeries from './FilterSeries';
 import PopulairList from './PopulairList';
 import MovieDetailsCont from './MovieDetailCont';
+import SerieDetailsCont from './SerieDetailCont';
 
 export {
   ProjectDetails,
@@ -22,4 +23,5 @@ export {
   PopulairList,
   MovieDetailsCont,
   HomeList,
+  SerieDetailsCont,
 }
