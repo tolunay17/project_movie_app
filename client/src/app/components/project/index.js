@@ -10,6 +10,9 @@ import FilterSeries from './FilterSeries';
 import PopulairList from './PopulairList';
 import MovieDetailsCont from './MovieDetailCont';
 import SerieDetailsCont from './SerieDetailCont';
+import Popular from './Popular';
+import Trending from './Trending';
+import Latest from './Latest'
 
 export {
   ProjectDetails,
@@ -24,4 +27,7 @@ export {
   MovieDetailsCont,
   HomeList,
   SerieDetailsCont,
+  Popular,
+  Trending,
+  Latest,
 }

@@ -20,6 +20,20 @@ const MovieDetailsCont = ({ data }) => {
       
       {data.production_companies !== undefined ? 
       <div>
+        <h3>Production Companies</h3>
+        <ul className={styles.companies}>
+          { data.production_companies.map(company => {
+            return(
+              <li key={company.id}>
+                { company.logo_path !== null ? 
+              <img alt=" company logo" className={styles.compiesLogo} src={`https://image.tmdb.org/t/p/original${company.logo_path}`}></img> :  
+              ""
+              }
+              <p>{company.name}</p>
+              </li>
+            )
+          }) }
+        </ul>
       </div> 
       : "" 
     }

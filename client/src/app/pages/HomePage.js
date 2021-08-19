@@ -1,11 +1,15 @@
 import { BaseLayout } from '../layouts';
-import { HomeList } from '../components/project';
+import { Popular, Trending } from '../components/project';
+
 
 const HomePage = () => {
   
   return (
     <BaseLayout>
-      <HomeList/>
+
+      <Popular/>
+      <Trending/>
+
     </BaseLayout>
   );
 };

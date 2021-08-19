@@ -4,6 +4,7 @@ import styles from './ProjectDetails.module.scss';
 
 
 const SerieListItem = ({ serie }) => {
+  console.log(serie)
   return (
     <article className={styles.SerieListEach}>     
     <Link to={Routes.SERIE_DETAILS.replace(':id', serie.id)}>
@@ -12,7 +13,7 @@ const SerieListItem = ({ serie }) => {
       </picture>
       </Link> 
       <div className={styles.content}>
-        <h3 className={styles.title}>{ serie.title }</h3>
+        <h3 className={styles.title}>{ serie.name }</h3>
       </div>   
     </article>
   )
