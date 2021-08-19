@@ -35,7 +35,7 @@ const Popular = () => {
                   <Link to={`/series/${f.id}`}><img src= {`https://image.tmdb.org/t/p/original/${f.poster_path}`} alt={f.name}/></ Link>
                   <div>
                     <p>
-                      <Link to={`/series/${f.id}`}>{f.name}</Link>
+                      <Link style={{textDecoration: 'none' , color: 'black', fontWeight: 'bold'}} to={`/series/${f.id}`}>{f.name}</Link>
                     </p>
                   </div>
                 </>

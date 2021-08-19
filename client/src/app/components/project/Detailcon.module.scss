@@ -1,0 +1,32 @@
+.datalistItem {
+    @media (min-width: 40rem) {
+        .fototxt {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+        }
+
+        .companies {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            li {
+                list-style: none;
+            }
+        }
+
+        .content {
+            width: 55%;
+            padding-left: 0.5rem;
+            padding-top: 5rem;
+        }
+    }
+
+
+    .compiesLogo {
+        display: block;
+        width: 100%;
+        max-width: 5rem;
+    }
+}

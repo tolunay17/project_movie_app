@@ -1,14 +1,22 @@
 .header {
-    width: 100vw;
     background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header nav ul {
-    display: flex;
     list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+@media (min-width: 40rem) {
+    .header nav ul {
+        display: flex;
+    }
 }
 
 .header nav ul li {

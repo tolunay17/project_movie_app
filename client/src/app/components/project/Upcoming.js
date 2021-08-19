@@ -21,9 +21,9 @@ const Upcoming = () => {
             <li key={film.id}>
               {film.title && 
                 <>
-                  <Link to={`/movies/${film.id}`}><img src= {`https://image.tmdb.org/t/p/original/${film.poster_path}`}  alt={film.title}/></ Link>
+                  <Link to={`/movies/${film.id}`}><img src= {`https://image.tmdb.org/t/p/original/${film.poster_path}`} alt={film.title}/></ Link>
                     <p>
-                      <Link to={`/movies/${film.id}`}>{film.title}</Link>
+                      <Link style={{textDecoration: 'none' , color: 'black', fontWeight: 'bold'}} to={`/movies/${film.id}`}>{film.title}</Link>
                     </p>
                     <p>{film.vote_average}</p>
                 </>
