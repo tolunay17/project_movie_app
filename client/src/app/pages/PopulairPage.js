@@ -1,11 +1,11 @@
 import { BaseLayout } from '../layouts';
-import { PopulairList } from '../components/project';
+import { Popular } from '../components/project';
 
 const PopulairPage = () => {
 
   return (
     <BaseLayout>
-      <PopulairList/>
+      <Popular/>
     </BaseLayout>
   );
 };

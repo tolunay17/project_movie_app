@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
-const Latest = () => {
+const Toprated = () => {
   
   const [array, setArray] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=e98128cef7b0c7ec91cd68220f6435a1&language=en-US&page=1`)
+    axios.get(`https://api.themoviedb.org/3/tv/top_rated?api_key=e98128cef7b0c7ec91cd68220f6435a1&language=en-US&page=1`)
       .then(response => setArray(response.data.results));
     }, []);
   
   return (
     
     <section>
-      <h2>Latest</h2>
+      <h1>Toprated</h1>
       <article>
       
         {
@@ -49,4 +49,4 @@ const Latest = () => {
   )
 }
 
-export default Latest
+export default Toprated

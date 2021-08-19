@@ -1,5 +1,5 @@
 import { BaseLayout } from '../layouts';
-import { Popular, Trending } from '../components/project';
+import { Popular, Trending, Toprated } from '../components/project';
 
 
 const HomePage = () => {
@@ -9,6 +9,7 @@ const HomePage = () => {
 
       <Popular/>
       <Trending/>
+      <Toprated/>
 
     </BaseLayout>
   );

@@ -14,7 +14,7 @@ const Trending = () => {
   return (
     
     <section>
-      <h2>Trendlfdjfkjdfkhdfhdjhfjhdhfhugdfuhgldhufuhiing</h2>
+      <h1>Trending</h1>
       <article>
         {
           array.map(f =>

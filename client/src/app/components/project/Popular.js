@@ -14,7 +14,7 @@ const Popular = () => {
   return (
     
     <section>
-      <h2>Popular</h2>
+      <h1>Popular</h1>
       <article>
       
         {
