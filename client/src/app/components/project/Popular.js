@@ -1,3 +1,4 @@
+import styles from './FilterMovies.module.scss'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
@@ -15,14 +16,13 @@ const Popular = () => {
     
     <section>
       <h1>Popular</h1>
-      <article>
-      
+      <ul className={styles.list}>
         {
           array.map(f =>
-            <div key={f.id}>
+            <li key={f.id}>
               {f.title && 
                 <>
-                  <Link to={`/movies/${f.id}`}><img src= {`https://image.tmdb.org/t/p/original/${f.poster_path}`} style={{width: '8rem'}} alt={f.title}/></ Link>
+                  <Link to={`/movies/${f.id}`}><img src= {`https://image.tmdb.org/t/p/original/${f.poster_path}`} alt={f.title}/></ Link>
                   <div>
                     <p>
                       <Link to={`/movies/${f.id}`}>{f.title}</Link>
@@ -32,7 +32,7 @@ const Popular = () => {
               }
               {f.name && 
                 <>
-                  <Link to={`/series/${f.id}`}><img src= {`https://image.tmdb.org/t/p/original/${f.poster_path}`} style={{width: '8rem'}} alt={f.name}/></ Link>
+                  <Link to={`/series/${f.id}`}><img src= {`https://image.tmdb.org/t/p/original/${f.poster_path}`} alt={f.name}/></ Link>
                   <div>
                     <p>
                       <Link to={`/series/${f.id}`}>{f.name}</Link>
@@ -41,10 +41,10 @@ const Popular = () => {
                 </>
               }
               <p><span>{f.vote_average}</span></p>
-            </div>
+            </li>
           )
         }
-      </article>
+      </ul>
     </section>
   )
 }

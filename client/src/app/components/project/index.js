@@ -12,7 +12,8 @@ import MovieDetailsCont from './MovieDetailCont';
 import SerieDetailsCont from './SerieDetailCont';
 import Popular from './Popular';
 import Trending from './Trending';
-import Toprated from './Toprated'
+import Toprated from './Toprated';
+import Upcoming from './Upcoming';
 
 export {
   ProjectDetails,
@@ -30,4 +31,5 @@ export {
   Popular,
   Trending,
   Toprated,
+  Upcoming,
 }

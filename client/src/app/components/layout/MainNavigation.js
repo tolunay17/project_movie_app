@@ -22,7 +22,7 @@ const MainNavigation = () => {
           </li>
           <li><Link to={Routes.MOVIES_POPULAIR}>Populair</Link>
           </li>
-          <li><Link to={Routes.MOVIES_RATED}>Rated</Link>
+          <li><Link to={Routes.MOVIES_TOP_RATED}>Rated</Link>
           </li>
           <li><Link to={Routes.MOVIES_SOON}>Soon</Link>
           </li>
